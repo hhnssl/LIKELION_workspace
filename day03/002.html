@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>피자 만들기</title>
+    </head>
+    <body>
+        <h1>피자 만들기</h1>
+        <!-- 크롬에서는 mountain 사진이 뜨고, 익스에서는 pizza 사진이 뜸! 익스는 webp를 지원 안하니까 -->
+        <picture>
+            <source
+                srcset="./images/mountain.webp"
+                media="(min-width:960px)"
+                type="image/webp"
+            />
+            <source
+                srcset="./images/wtf.png"
+                media="(min-width:620px)"
+                type="image/png"
+            />
+            <img
+                width="500px"
+                srcset="./images/pizza.jpg 2x"
+                src="./images/pizza.jpg"
+                alt="delicious PIZZA!"
+                type="image/jpeg"
+            />
+        </picture>
+
+        <ol>
+            <li>양파와 피망, 버섯을 채 썰어 준비해주세요</li>
+            <li>
+                빵에 토마토소스를 바르고 피망, 버섯, 베이컨 치즈 순으로 넉넉히
+                토핑해 주세요
+            </li>
+            <li>예열된 오블에 넣고 230도 10~15분간 구워주세요</li>
+        </ol>
+
+        /*출처니까 cite!*/
+        <cite>참고: <a href="https://naver.com">https://naver.com</a></cite>
+    </body>
+</html>
